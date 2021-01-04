@@ -47,15 +47,14 @@ query($id: ID!) {
 </page-query>
 
 <script>
-// import MarkdownIt from 'markdown-it'
-// const md = new MarkdownIt()
+import MarkdownIt from 'markdown-it'
+const md = new MarkdownIt()
 
 export default {
   name: 'PostPage',
   methods: {
     mdToHtml (content) {
-      return '11'
-      // return md.render(content)
+      return md.render(content)
     }
   }
 }
