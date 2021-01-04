@@ -10,8 +10,7 @@
             <div class="post-heading">
               <h1>{{ $page.post.title }}</h1>
               <!-- <h2 class="subheading">Problems look mighty small from 150 miles up</h2> -->
-              <span class="meta">Posted by
-                <a href="#">Start Bootstrap</a>
+              <span class="meta">Posted by <a href="#">Start Bootstrap</a>
                 {on August 24, 2019}</span>
             </div>
           </div>
@@ -48,14 +47,15 @@ query($id: ID!) {
 </page-query>
 
 <script>
-import MarkdownIt from 'markdown-it'
-const md = new MarkdownIt()
+// import MarkdownIt from 'markdown-it'
+// const md = new MarkdownIt()
 
 export default {
   name: 'PostPage',
   methods: {
     mdToHtml (content) {
-      return md.render(content)
+      return '11'
+      // return md.render(content)
     }
   }
 }
